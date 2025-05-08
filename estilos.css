@@ -1,0 +1,36 @@
+body{padding:0;
+    border:0;
+    margin:0}
+
+header{background-color: rgb(68, 178, 230);
+width: 100%;
+height: 90px;}
+
+#title{margin-left:20px;
+     margin-top:0px;
+     padding-top:15px;
+     margin-bottom: 2px;
+    }
+
+#subtitle{margin-left: 20px;
+        margin-top: 0px;}
+
+main{margin:40px}
+
+.Subtitulo{width: 50%;
+        height: 40px;
+        border:1px solid black;
+        margin-bottom: 0px;
+        border-bottom:0;
+        box-sizing: border-box;
+        }
+
+.Descripcion{width: 50%;
+    display: flex;
+    border:1px solid black;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    word-break: break-word;
+    padding:10px;
+    margin-top:0px
+}
