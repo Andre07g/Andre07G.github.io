@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Vida</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    <header>
-        <h1 id="title">Edgar Andres Leal Plata</h1>
-        <p id="subtitle">Desarrollador software</p>
+    <header class="barra-navegacion">
+        <div class="barra-navegacion-icono">
+            <img id="icono-campus" src="imagenes/icono-campus.png" alt="Icono de Campuslands">
+            <a href="https://campuslands.com/" target="_blank">
+                <h2>Campuslands</h2>
+            </a>
+        </div>
+        <div class="barra-navegacion-varios">
+            <h4>Inicio</h4>
+            <h4>Sobre mi</h4>
+            <h4>Proyectos</h4>
+            <h4>Contacto</h4>
+        </div>
+        <div class="barra-navegacion-contacto">
+            <a href="https://wa.me/573223578559?text=Hola%20Edgar%2C%20vi%20tu%20portafolio%20y%20quiero%20contactarte."
+                target="_blank">
+                <h3>Whatsapp</h3>
+            </a>
+        </div>
     </header>
-    <main>
-        <section>
-            <div>
-            <h2 class="Subtitulo">Sobre mi</h2></div>
-            <div><p class="Descripcion">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+    <main class="cuerpo">
+        <div class="inicio">
+            <div class="presentacion">
+                <h1>Hola, soy Andrés</h1>
+                <p>Soy <span style="color:rgb(55, 15, 199)">desarrollador</span> en formación, apasionado por la
+                    tecnología, los videojuegos y aprender cosas nuevas cada día.</p>
+                <p>Actualmente estoy estudiando programación y construyendo proyectos que mezclan creatividad y lógica.
+                </p>
+
             </div>
-        </section>
+            <div class="imagen">
+                <img src="imagenes/foto-ega.jpg" alt="Foto de Edgar Leal" id="foto-edgar">
+            </div>
+        </div>
+        <div class="sobre-mi">
+            <div class="habilidades">
+                <h3 class="sub-titulos">Habilidades</h3>
+                <h4>Software</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <h4>Sociales</h4>
+                <ul>
+                    <li>Adaptabilidad</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Autonomia</li>
+                </ul>
+            </div>
+            <div class="formacion">
+                <h3 class="sub-titulos">Formacion</h3>
+                <h4>IE Americas</h4>
+                <p>2019-2022</p>
+                <h4>Campuslands</h4>
+                <p>2025-Actualidad</p>
+            </div>
+            <div class="idiomas">
+                <h3 class="sub-titulos-idiomas">Idiomas</h3>
+                <div id="nivel-español">
+                <label for="español">Español-Nativo</label>
+                <progress id="español" value="100" max="100">Nativo</progress>
+            </div>
+            <div id="nivel-ingles">
+                <label for="ingles">Ingles-B1.2</label>
+                <progress id="ingles" value="65" max="100">Nativo</progress>
+            </div>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
