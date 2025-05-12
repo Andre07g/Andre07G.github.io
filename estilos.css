@@ -76,7 +76,7 @@ body {
 
 /*Inicio*/
 
-.inicio {
+.inicio {scroll-margin-top: 100px;
     width: 70%;
     height: auto;
     display: inline-flex;
@@ -116,7 +116,7 @@ body {
 
 /*Sobre Mi*/
 
-.sobre-mi {
+.sobre-mi {scroll-margin-top: 100px;
     font-size: clamp(1rem, 2vw, 2rem);
     width: 85%;
     height: auto;
@@ -200,3 +200,41 @@ body {
 }
 
 /*Proyectos*/
+.proyectos {scroll-margin-top: 100px;
+    display: block;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.slide-item img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.slide-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -2;
+    width: 100%;
+
+}
+
+.slide-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.parrafo-proyecto{margin-bottom: 100px;}
+
+#slide-1:checked ~ .slide-inner .slide-1,
+#slide-2:checked ~ .slide-inner .slide-2,
+#slide-3:checked ~ .slide-inner .slide-3,
+#slide-4:checked ~ .slide-inner .slide-4 {
+    opacity: 1;
+    z-index: 1;}
