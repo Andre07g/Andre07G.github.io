@@ -13,11 +13,11 @@
         padding: 10px;
         align-items: flex-start;
         justify-content: center;
-    }
+    position: absolute !important;}
 
     .inicio {
         position: relative;
-        top:100px;
+        top:200px;
         padding: 5%;
         width: 90%;
     }
@@ -55,6 +55,7 @@
 
     .formulario {
         width: 100%;
+        min-width: 250px;
     }
 
     .redes {
@@ -70,6 +71,17 @@
     #formulario-comentario {
         width: 100%;
     }
+
+.form-campos {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    padding: 10px;
+    padding-top: 10px;
+}
 }
 
 
